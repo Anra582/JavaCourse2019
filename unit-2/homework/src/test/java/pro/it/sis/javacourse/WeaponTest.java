@@ -37,4 +37,34 @@ public class WeaponTest {
 
         assertEquals(100, t.getIceDamage());
     }
+
+    @Test
+    public void testSwordPhysicalDamage() {
+
+        Target t = new Target();
+        Weapon w = new Sword(new Damage(100, 0, 0));
+        w.hit(t);
+
+        assertEquals(100, t.getPhysicalDamage());
+    }
+
+    @Test
+    public void testSwordFireDamage() {
+
+        Target t = new Target();
+        Weapon w = new Sword(new Damage(100, 100, 0));
+        w.hit(t);
+
+        assertEquals(100, t.getFireDamage());
+    }
+
+    @Test
+    public void testSwordIceDamage() {
+
+        Target t = new Target();
+        Weapon w = new Sword(new Damage(100, 0, 100));
+        w.hit(t);
+
+        assertEquals(100, t.getIceDamage());
+    }
 }

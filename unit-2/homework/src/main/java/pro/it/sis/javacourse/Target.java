@@ -21,14 +21,14 @@ public class Target {
     private int iceDamage;
 
     public void takeDamage(Damage damage) {
-        physicalDamage= damage.getPhysicalDamage();
-        fireDamage = damage.getFireDamage();
-        iceDamage = damage.getIceDamage();
+        this.physicalDamage= damage.getPhysicalDamage();
+        this.fireDamage = damage.getFireDamage();
+        this.iceDamage = damage.getIceDamage();
     }
 
     public void reset() {
-        physicalDamage = 0;
-        fireDamage = 0;
-        iceDamage = 0;
+        this.physicalDamage = 0;
+        this.fireDamage = 0;
+        this.iceDamage = 0;
     }
 }
