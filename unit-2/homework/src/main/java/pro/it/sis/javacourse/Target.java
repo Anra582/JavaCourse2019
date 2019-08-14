@@ -19,4 +19,16 @@ public class Target {
     private int fireDamage;
 
     private int iceDamage;
+
+    public void takeDamage(Damage damage) {
+//        physicalDamage= damage.getPhysicalDamage();
+//        fireDamage = damage.getFireDamage();
+//        iceDamage = damage.getIceDamage();
+    }
+
+    public void reset() {
+        physicalDamage = 0;
+        fireDamage = 0;
+        iceDamage = 0;
+    }
 }
