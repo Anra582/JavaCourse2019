@@ -1,12 +1,9 @@
 package pro.it.sis.javacourse;
 
 public class App {
-    public Object getGreeting() {
+    private static final String greetings = "Greetings!!!";
+    public String getGreeting() {
         System.out.println("Greetings Unit-2!");
-        return new Object();
-    }
-
-    public App() {
-
+        return greetings;
     }
 }

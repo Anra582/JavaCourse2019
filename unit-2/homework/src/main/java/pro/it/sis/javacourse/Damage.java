@@ -1,17 +1,9 @@
 package pro.it.sis.javacourse;
 
-//public abstract class Damage {
-//    private int value;
-//
-//    protected Damage(int value) {
-//        this.value = value;
-//    }
-//}
-
-public abstract class Damage {
-    private int physicalDamage;
-    private int fireDamage;
-    private int iceDamage;
+public class Damage {
+    private final int physicalDamage;
+    private final int fireDamage;
+    private final int iceDamage;
 
     public Damage(int physicalDamage, int fireDamage, int iceDamage) {
         this.physicalDamage = physicalDamage;

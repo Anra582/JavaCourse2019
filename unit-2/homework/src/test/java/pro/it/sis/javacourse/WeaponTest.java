@@ -9,30 +9,30 @@ import static org.junit.Assert.*;
 public class WeaponTest {
 
     @Test
-    public void testPhysicalDamage() {
+    public void testCrossbarPhysicalDamage() {
 
         Target t = new Target();
-        Weapon w = new Weapon();
+        Weapon w = new Crossbar(new Damage(100, 0, 0));
         w.hit(t);
 
         assertEquals(100, t.getPhysicalDamage());
     }
 
     @Test
-    public void testFireDamage() {
+    public void testCrossbarFireDamage() {
 
         Target t = new Target();
-        Weapon w = new Weapon();
+        Weapon w = new Crossbar(new Damage(100, 100, 0));
         w.hit(t);
 
         assertEquals(100, t.getFireDamage());
     }
 
     @Test
-    public void testIceDamage() {
+    public void testCrossbarIceDamage() {
 
         Target t = new Target();
-        Weapon w = new Weapon();
+        Weapon w = new Crossbar(new Damage(100, 0, 100));
         w.hit(t);
 
         assertEquals(100, t.getIceDamage());

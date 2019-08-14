@@ -21,9 +21,9 @@ public class Target {
     private int iceDamage;
 
     public void takeDamage(Damage damage) {
-//        physicalDamage= damage.getPhysicalDamage();
-//        fireDamage = damage.getFireDamage();
-//        iceDamage = damage.getIceDamage();
+        physicalDamage= damage.getPhysicalDamage();
+        fireDamage = damage.getFireDamage();
+        iceDamage = damage.getIceDamage();
     }
 
     public void reset() {
